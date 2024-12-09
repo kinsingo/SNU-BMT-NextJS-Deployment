@@ -1,4 +1,4 @@
-import MainPageModule from "@/components/model-dataset/MainPageModule";
+import MainPageModule, {ModelProps}  from "@/components/model-dataset/MainPageModule";
 
 
 export const metadata = {
@@ -7,7 +7,7 @@ export const metadata = {
 }
 
 export default function Dataset() {
-  const data = {
+  const data:ModelProps = {
     modelName: "ImageNet Dataset 2012",
     version: "2012",
     description: `ImageNet is a large-scale image dataset widely used for visual recognition tasks. The 2012 version of the dataset is best known for its use in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC). It contains millions of labeled images organized according to the WordNet hierarchy, supporting tasks such as image classification and object localization.`,
@@ -21,7 +21,7 @@ export default function Dataset() {
     useCases: [
       "Image classification (e.g., ResNet, VGG)",
     ],
-    muiColor: "success" as MUIColor,
+    muiColor: "success",
     dataPath_onnx_or_smallDataset: "ai-dataset/classification/imageNet2012/ILSVRC2012_img_val_10000.zip",
     dataPath_pytorch_or_largeDataset: "ai-dataset/classification/imageNet2012/ILSVRC2012_img_val_50000.zip",
     isModelType: false, // ImageNet은 데이터셋이므로 false

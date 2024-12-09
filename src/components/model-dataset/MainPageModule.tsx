@@ -22,7 +22,7 @@ function CustomListItem({ children }: { children: React.ReactNode }) {
   );
 }
 
-interface ModelProps {
+export interface ModelProps {
   modelName: string;
   version: string;
   description: string;

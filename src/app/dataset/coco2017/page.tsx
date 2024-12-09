@@ -1,4 +1,4 @@
-import MainPageModule from "@/components/model-dataset/MainPageModule";
+import MainPageModule, {ModelProps} from "@/components/model-dataset/MainPageModule";
 
 export const metadata = {
   title: "AI BMT - Coco2017",
@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 export default function Dataset() {
-  const data = {
+  const data : ModelProps = {
     modelName: "COCO Dataset 2017",
     version: "2017",
     description: `COCO (Common Objects in Context) is a large-scale object detection, segmentation, and captioning dataset. It contains images with object instances segmented, labeled, and contextualized for machine learning tasks. The 2017 version provides updates and refinements over earlier releases.`,
@@ -21,7 +21,7 @@ export default function Dataset() {
     useCases: [
       "Object Detection (e.g., Yolo)",
     ],
-    muiColor: "success" as MUIColor ,
+    muiColor: "success" ,
     dataPath_onnx_or_smallDataset: "ai-dataset/object-detection/Coco2017/COCO2017_img_val_5000.zip",
     dataPath_pytorch_or_largeDataset: "ai-dataset/object-detection/Coco2017/COCO2017_img_val_5000.zip",
     isModelType: false, // COCO는 모델이 아닌 데이터셋이므로 false

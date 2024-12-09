@@ -1,4 +1,4 @@
-import MainPageModule from "@/components/model-dataset/MainPageModule";
+import MainPageModule, {ModelProps} from "@/components/model-dataset/MainPageModule";
 
 export const metadata = {
   title: "AI BMT - Resnet50",
@@ -7,7 +7,7 @@ export const metadata = {
 
 
 export default function Model() {
-  const data = {
+  const data:ModelProps = {
     modelName: "ResNet50 (resnet50_v1)",
     version: "1.0",
     description: `ResNet50 is a deep residual network developed by Microsoft, designed to overcome the vanishing gradient problem in very deep networks. It has 50 layers and uses residual connections to enable efficient training of deep architectures.`,
@@ -21,7 +21,7 @@ export default function Model() {
     useCases: [
       "Image Classification (e.g., ImageNet dataset)",
     ],
-    muiColor: "info" as MUIColor,
+    muiColor: "info",
     dataPath_onnx_or_smallDataset: "ai-model/classification/resnet50_v1.onnx",
     dataPath_pytorch_or_largeDataset: "ai-model/classification/resnet50_v1.pth",
     isModelType: true,
