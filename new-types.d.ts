@@ -85,5 +85,5 @@ declare global {
     collapse?: RouteItem[]; // 하위 라우트 (재귀적 구조)
     dropdown?: boolean; // 드롭다운 메뉴 여부
   }  
-  type MUIColorT = "primary" | "secondary" | "error" | "info" | "success" | "warning" | "inherit";
+  type MUIColor = "primary" | "secondary" | "error" | "info" | "success" | "warning" | "inherit";
 }
