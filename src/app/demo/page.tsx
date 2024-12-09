@@ -1,5 +1,5 @@
 import { Container, Box, Typography } from "@mui/material";
-import styles from "./demo.module.css"
+import styles from "./demo.module.css";
 
 export default function Demo() {
   return (
@@ -29,7 +29,7 @@ export default function Demo() {
           }}
         >
           <iframe
-            src="https://www.youtube.com/embed/gN2T_-SWghc?si=edkK9BFuM-OZwree"
+            src="https://www.youtube.com/embed/ynmNZPapjdg?si=OgQZKvS3tOcV7rRl"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
@@ -41,4 +41,3 @@ export default function Demo() {
     </Container>
   );
 }
-

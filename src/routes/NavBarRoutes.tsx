@@ -25,7 +25,7 @@
 //import Icon from "@mui/material/Icon"; 대신 아래 코드를 사용하세요.
 import AssessmentIcon from "@mui/icons-material/Assessment";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-import ContactsIcon from "@mui/icons-material/Contacts";
+//import ContactsIcon from "@mui/icons-material/Contacts";
 import ArticleIcon from "@mui/icons-material/Article";
 
 const routes : RouteItem[] = [
@@ -95,22 +95,6 @@ const routes : RouteItem[] = [
         name: "BMT for Windows user",
         description: "Tested on Window 10",
         href: "https://github.com/kinsingo/SNU_BMT_GUI_Submitter_Windows",
-      },
-    ],
-  },
-  {
-    name: "Developers",
-    icon: <ContactsIcon />,
-    collapse: [
-      {
-        name: "File",
-        description: "Access and manage files",
-        route: "/developer/file",
-      },
-      {
-        name: "Progress",
-        description: "View and log progress",
-        route: "/developer/progress",
       },
     ],
   },
