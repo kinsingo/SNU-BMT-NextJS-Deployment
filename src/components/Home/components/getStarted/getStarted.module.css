@@ -1,0 +1,88 @@
+/*-------------------------------------
+        6. Works 
+--------------------------------------*/
+.works {
+  --window-color: #0099d1;
+  --linux-color: #e5ac33;
+}
+
+.works-content {
+  margin-top: 50px;
+}
+
+.single-how-works {
+  text-align: center;
+  padding: 50px 42px;
+  border-radius: 3px;
+  box-shadow: 0 0px 5px rgba(71, 71, 71, 0.2);
+  margin-bottom: 30px;
+  transition: 0.3s linear;
+}
+
+@media screen and (max-width: 768px) {
+  .single-how-works {
+    max-width: 350px;
+    margin: 30px auto;
+  }
+}
+
+.single-how-works-icon {
+  display: inline-block;
+  color: #50616c;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background: #eef2f6;
+  border-radius: 50%;
+}
+
+.single-how-works:hover h6,
+.single-how-works:hover p {
+  color: #fff;
+}
+
+.single-how-works:hover .single-how-works-icon {
+  background: #fff;
+}
+
+.single-how-works:hover {
+  box-shadow: 0 0px 10px rgba(71, 71, 71, 0.4);
+}
+
+.single-how-works-window:hover {
+  background: var(--window-color);
+}
+
+.single-how-works-window:hover .how-work-btn {
+  background: #fff;
+  color: var(--window-color);
+}
+
+.single-how-works-linux:hover {
+  background: var(--linux-color);
+}
+
+.single-how-works-linux:hover .how-work-btn {
+  background: #fff;
+  color: var(--linux-color);
+}
+
+.how-work-btn {
+  display: inline-block;
+  margin: 0;
+  width: 100px;
+  height: 35px;
+  font-size: 12px;
+  background: transparent;
+  color: #767f86;
+  border: 1px solid #d3d6d9;
+  border-radius: 3px;
+  transition: 0.3s linear;
+}
+
+.how-work-btn:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+
